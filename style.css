@@ -104,3 +104,49 @@ a:hover {
     overflow: hidden;
     transition: all 0.3ms ease-in-out;
 }
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3ms ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+
+}
+
+.menu-links.open{
+    /*when we run the script js this is what will run*/
+    max-height: 300px;
+    
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px); /*we are transforming the line and turning it into an x and it will be skewed so we move it to the side*/
+    
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;    
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px); /*we are transforming the line and turning it into an x and it will be skewed so we move it to the side*/
+    
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+
+}
+.hamburger-icon span:first-child{
+    opacity:1;
+
+}
+.hamburger-icon span:first-child{
+    transform: none;
+
+}
